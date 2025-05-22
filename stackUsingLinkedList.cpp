@@ -50,4 +50,15 @@ public:
         top = top->next;  // update the top pointer to the next node
         cout << "Popped Value: " << top->data << endl;
     }
-    
+
+    // Peek/Top operarion: Retrieve the value of the topmost element without removing
+    void peek()
+    {
+        if (top == NULL)
+        {
+            cout << "Stack is Empty" << endl;
+        }
+        else
+        {
+            Node *current = top;
+            
