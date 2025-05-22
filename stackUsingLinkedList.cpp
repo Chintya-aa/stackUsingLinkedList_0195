@@ -127,4 +127,5 @@ int main()
                         cout << "Stack is Empty. Cannot pop." << endl;
                     }
                     break;
-                
+                case 3:
+                    
