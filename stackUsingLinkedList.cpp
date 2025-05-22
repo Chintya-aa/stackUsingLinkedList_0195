@@ -73,7 +73,17 @@ public:
     // IsEmpty operation: chek if the stck is empty
     bool isEmpty()
     {
-        return top == NULL;
+        return top == NULL; // Return true if the top pointer is NULL, indication an empty stack
     }
 };
+
+int main()
+{
+    Stack stact;
+
+    int choice, value;
+    int value;
+
+    
+
 
