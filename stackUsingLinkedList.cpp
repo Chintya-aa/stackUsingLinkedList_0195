@@ -51,7 +51,7 @@ public:
         cout << "Popped Value: " << top->data << endl;
     }
 
-    // Peek/Top operarion: Retrieve the value of the topmost element without removing
+    // Peek/Top operation: Retrieve the value of the topmost element without removing
     void peek()
     {
         if (top == NULL)
@@ -61,4 +61,19 @@ public:
         else
         {
             Node *current = top;
-            
+            while (current != NULL)
+            {
+                cout << current->data << " " << endl;
+                current = current->next;
+            }
+            cout << endl;
+        } // Return the value of the top node
+    }
+
+    // IsEmpty operation: chek if the stck is empty
+    bool isEmpty()
+    {
+        return top == NULL;
+    }
+};
+
